@@ -6,7 +6,7 @@
       <class name="etherscandemo.main">
         <methods>
           <include name="beforeMethod"/>
-          <include name="emptyClick"/>
+          <include name="fullLogin"/>
         </methods>
       </class> <!-- etherscandemo.main -->
     </classes>

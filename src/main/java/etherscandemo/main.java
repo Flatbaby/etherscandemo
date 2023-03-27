@@ -1,6 +1,7 @@
 package etherscandemo;
 
 import org.openqa.selenium.By;
+import pages.EtherscanPage;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -16,71 +17,81 @@ import org.openqa.selenium.interactions.Actions;
 
 public class main {
 	// for further teardown and setup i initialized the driver here
+
 	WebDriver driver;
-	// Finding elements for methods
-	// Some of these may repeat as they have the same xpath
-	// and will be reused (fix this later)
-	By loginButton = By.xpath("//html[@id='html']//input[@id='ContentPlaceHolder1_btnRegister']");
-	By cookiesButton = By.xpath("//html[@id='html']//button[@id='btnCookie']");
-	By usernameField = By.xpath("//html[@id='html']//input[@id='ContentPlaceHolder1_txtUserName']");
-	By usernameError = By.xpath("//html[@id='html']//div[@id='ContentPlaceHolder1_txtUserName-error']");
-	By emailField = By.xpath("//html[@id='html']//input[@id='ContentPlaceHolder1_txtEmail']");
-	By invalidEmailElement = By.xpath("//html[@id='html']//div[@id='ContentPlaceHolder1_txtEmail-error']");
-	By confirmationEmailField = By.xpath("//html[@id='html']//input[@id='ContentPlaceHolder1_txtConfirmEmail']");
-	By confirmationEmailFieldError = By
-			.xpath("//html[@id='html']//div[@id='ContentPlaceHolder1_txtConfirmEmail-error']");
 
 	@Test
 	public void emptyClick() throws InterruptedException {
-		click(cookiesButton);
-		forceButton();
-		WebElement userError = find(usernameError);
-		elementPresentAssertion(true, userError);
+		pages.EtherscanPage.click(pages.EtherscanPage.cookiesButton, driver);
+		pages.EtherscanPage.forceButton(driver, pages.EtherscanPage.loginButton);
+		WebElement userError = pages.EtherscanPage.find(pages.EtherscanPage.usernameError, driver);
+		pages.EtherscanPage.elementPresentAssertion(true, userError);
 	}
 
 	@Test
 	public void validUsername() {
-		type(usernameField, "username");
-		WebElement userError = find(usernameError);
-		elementPresentAssertion(false, userError);
+		pages.EtherscanPage.type(pages.EtherscanPage.usernameField, "username", driver);
+		WebElement userError = pages.EtherscanPage.find(pages.EtherscanPage.usernameError, driver);
+		pages.EtherscanPage.elementPresentAssertion(false, userError);
 	}
 
 	@Test
 	public void shortUsername() {
-		type(usernameField, "12");
-		WebElement userError = find(usernameError);
-		elementPresentAssertion(true, userError);
+		pages.EtherscanPage.type(pages.EtherscanPage.usernameField, "12", driver);
+		WebElement userError = pages.EtherscanPage.find(pages.EtherscanPage.usernameError, driver);
+		pages.EtherscanPage.elementPresentAssertion(true, userError);
 	}
 
 	@Test
 	public void nonAlphanumericUsername() {
-		type(usernameField, "+_)()_(");
-		WebElement userError = find(usernameError);
-		elementPresentAssertion(true, userError);
+		pages.EtherscanPage.type(pages.EtherscanPage.usernameField, "+_)()_(", driver);
+		WebElement userError = pages.EtherscanPage.find(pages.EtherscanPage.usernameError, driver);
+		pages.EtherscanPage.elementPresentAssertion(true, userError);
 	}
 
 	@Test
 	public void invalidEmail() {
-		type(emailField, "false");
-		WebElement invalidEmail = find(invalidEmailElement);
-		elementPresentAssertion(true, invalidEmail);
+		pages.EtherscanPage.type(pages.EtherscanPage.emailField, "false", driver);
+		WebElement invalidEmail = pages.EtherscanPage.find(pages.EtherscanPage.invalidEmailElement, driver);
+		pages.EtherscanPage.elementPresentAssertion(true, invalidEmail);
 	}
 
 	@Test
 	public void validEmail() {
-		type(emailField, "true@gmail.com");
-		WebElement invalidEmail = find(invalidEmailElement);
-		elementPresentAssertion(false, invalidEmail);
+		pages.EtherscanPage.type(pages.EtherscanPage.emailField, "true@gmail.com", driver);
+		WebElement invalidEmail = pages.EtherscanPage.find(pages.EtherscanPage.invalidEmailElement, driver);
+		pages.EtherscanPage.elementPresentAssertion(false, invalidEmail);
 	}
 
 	@Test
 	public void invalidEmailWithConfirmation() {
-		type(emailField, "false");
-		type(confirmationEmailField, "false");
-		WebElement invalidEmail = find(invalidEmailElement);
-		WebElement invalidEmailConfirmation = find(confirmationEmailFieldError);
-		elementPresentAssertion(true, invalidEmail);
-		elementPresentAssertion(true, invalidEmailConfirmation);
+		pages.EtherscanPage.type(pages.EtherscanPage.emailField, "false", driver);
+		pages.EtherscanPage.type(pages.EtherscanPage.confirmationEmailField, "false", driver);
+		WebElement invalidEmail = pages.EtherscanPage.find(pages.EtherscanPage.invalidEmailElement, driver);
+		WebElement invalidEmailConfirmation = pages.EtherscanPage.find(pages.EtherscanPage.confirmationEmailFieldError,
+				driver);
+		pages.EtherscanPage.elementPresentAssertion(true, invalidEmail);
+		pages.EtherscanPage.elementPresentAssertion(true, invalidEmailConfirmation);
+	}
+
+	@Test
+	public void captchaTest() {
+		pages.EtherscanPage.click(pages.EtherscanPage.captchaBox, driver);
+		pages.EtherscanPage.forceButton(driver, pages.EtherscanPage.loginButton);
+		WebElement captchaErrorPresent = pages.EtherscanPage.find(pages.EtherscanPage.captchaError, driver);
+		pages.EtherscanPage.elementPresentAssertion(true, captchaErrorPresent);
+	}
+
+	@Test
+	public void fullLoginWithoutCaptcha() {
+		pages.EtherscanPage.click(pages.EtherscanPage.cookiesButton, driver);
+		pages.EtherscanPage.type(pages.EtherscanPage.usernameField, "username", driver);
+		pages.EtherscanPage.type(pages.EtherscanPage.emailField, "true@gmail.com", driver);
+		pages.EtherscanPage.type(pages.EtherscanPage.confirmationEmailField, "true@gmail.com", driver);
+		pages.EtherscanPage.type(pages.EtherscanPage.passwordField, "derventa", driver);
+		pages.EtherscanPage.type(pages.EtherscanPage.passwordFieldConfirmation, "derventa", driver);
+		pages.EtherscanPage.forceButton(driver, pages.EtherscanPage.agreementCheckbox);
+		pages.EtherscanPage.forceButton(driver, pages.EtherscanPage.loginButton);
 	}
 
 	@BeforeMethod
@@ -89,11 +100,11 @@ public class main {
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
 		// i was encountering an error and this resolved it
-		options.addArguments("--remote-allow-origins=*");
+		options.addArguments("--remote-allow-origins=");
 		driver = new ChromeDriver(options);
 		// maximising the webbrowser to exclude any errors due to size and interceptions
 		driver.manage().window().maximize();
-		driver.get("https://etherscan.io/register");
+		driver.get("https:etherscan.ioregister");
 		System.out.println("Starting test: ");
 	}
 
@@ -101,37 +112,6 @@ public class main {
 	public void afterMethod() {
 		System.out.println("Closing browser");
 		driver.quit();
-	}
-
-	// Methods as per DRY principlex
-	WebElement find(By locator) {
-		return driver.findElement(locator);
-	}
-
-	private void click(By locator) {
-		find(locator).click();
-	}
-
-	private void type(By locator, String text) {
-		find(locator).sendKeys(text);
-	}
-
-	private void forceButton() {
-		WebElement button = driver.findElement(loginButton);
-		// forcing a button click due to the Cookies message covering up the button.
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].click();", button);
-	}
-
-	private void elementPresentAssertion(boolean appearance, WebElement element) {
-		try {
-			Assert.assertEquals(appearance, element.isDisplayed());
-		} catch (AssertionError e) {
-			System.out.println("Error");
-			throw e;
-		}
-		System.out.println("Valid test.");
-
 	}
 
 }
