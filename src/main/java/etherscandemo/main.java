@@ -101,7 +101,7 @@ public class main {
 		ChromeOptions options = new ChromeOptions();
 		// i was encountering an error and this resolved it
 		options.addArguments("--remote-allow-origins=");
-		driver = new ChromeDriver(options);
+		ChromeDriver driver = new ChromeDriver(options);
 		// maximising the webbrowser to exclude any errors due to size and interceptions
 		driver.manage().window().maximize();
 		driver.get("https:etherscan.ioregister");
