@@ -6,15 +6,7 @@
       <class name="etherscandemo.main">
         <methods>
           <include name="captchaTest"/>
-          <include name="fullLoginWithoutCaptcha"/>
           <include name="beforeMethod"/>
-          <include name="emptyClick"/>
-          <include name="shortUsername"/>
-          <include name="validEmail"/>
-          <include name="invalidEmail"/>
-          <include name="invalidEmailWithConfirmation"/>
-          <include name="nonAlphanumericUsername"/>
-          <include name="validUsername"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- etherscandemo.main -->
