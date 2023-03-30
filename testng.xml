@@ -1,9 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="etherscandemo.main"/>
-    </classes>
-  </test> <!-- Test -->
+	<test thread-count="5" name="Username">
+		<groups>
+			<run>
+				<include name="Username" />
+			</run>
+		</groups>
+		<classes>
+			<class name="etherscandemo.main"></class>
+		</classes>
+	</test> <!-- Test -->
+	<test name="Email">
+		<groups>
+			<run>
+				<include name="Email" />
+			</run>
+		</groups>
+		<classes>
+			<class name="etherscandemo.main"></class>
+		</classes>
+	</test>
+	<test name="Password">
+		<groups>
+			<run>
+				<include name="Password" />
+			</run>
+		</groups>
+		<classes>
+			<class name="etherscandemo.main"></class>
+		</classes>
+	</test>
+	<test name="Registration">
+		<groups>
+			<run>
+				<include name="Registration" />
+			</run>
+		</groups>
+		<classes>
+			<class name="etherscandemo.main"></class>
+		</classes>
+	</test>
+	<test name="Other">
+		<groups>
+			<run>
+				<include name="Other" />
+			</run>
+		</groups>
+		<classes>
+			<class name="etherscandemo.main"></class>
+		</classes>
+	</test>
 </suite> <!-- Suite -->

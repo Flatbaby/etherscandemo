@@ -1,5 +1,6 @@
 package pages;
 
+import org.apache.commons.lang.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -19,15 +20,28 @@ public class EtherscanPage {
 			.xpath("//html[@id='html']//input[@id='ContentPlaceHolder1_txtConfirmEmail']");
 	public static By confirmationEmailFieldError = By
 			.xpath("//html[@id='html']//div[@id='ContentPlaceHolder1_txtConfirmEmail-error']");
-	public static By captchaBox = By.xpath("//span[@id='recaptcha-anchor']/div[1]");
 	public static By captchaError = By
+			.xpath("//html[@id='html']//main[@id='content']//form[@action='./register']//a[@href='/register']");
+	public static By existingUsernameError = By
 			.xpath("//html[@id='html']//main[@id='content']//form[@action='./register']/div[@role='alert']");
 	public static By passwordField = By.xpath("//html[@id='html']//input[@id='ContentPlaceHolder1_txtPassword']");
 	public static By passwordFieldConfirmation = By.xpath(
 			"//html[@id='html']//div[@id='ContentPlaceHolder1_maindiv']//input[@name='ctl00$ContentPlaceHolder1$txtPassword2']");
-	public static By agreementCheckbox = By.id("ContentPlaceHolder1_MyCheckBox");
-	public static String validUsername = "username";
-	public static String invalidUsername = "12";
+	public static By agreementCheckbox = By.cssSelector("input#ContentPlaceHolder1_MyCheckBox");
+	public static By vertifyEmail = By.xpath("//html[@id='html']//div[@id='ContentPlaceHolder1_divHeaderReg']//i");
+	public static By captchaBox = By.xpath("//div[@class='recaptcha-checkbox-border']");
+	public static By captchaFrame = By.xpath("//iframe[@title='reCAPTCHA']");
+	public static By passwordError = By.xpath("//html[@id='html']//div[@id='ContentPlaceHolder1_txtPassword-error']");
+	public static By passwordConfirmationError = By
+			.xpath("//html[@id='html']//div[@id='ContentPlaceHolder1_maindiv']/div[5]/div[@class='invalid-feedback']");
+	public static String validUsername = RandomStringUtils.randomAlphabetic(10);
+	public static String shortUsername = RandomStringUtils.randomAlphanumeric(2);
+	public static String nonAlphanumericUsername = RandomStringUtils.random(8, "!@#$%^&*()_+");
+	public static String invalidEmailString = "false";
+	public static String validEmailString = "true@gmail.com";
+	public static String validUsernameString = "username";
+	public static String validPasswordString = "password";
+	public static String invalidPasswordString = "asdf";
 
 	public static WebElement find(By locator, WebDriver driver) {
 		element = driver.findElement(locator);
@@ -57,8 +71,6 @@ public class EtherscanPage {
 			throw e;
 		}
 		System.out.println("Valid test.");
-
 	}
-
 
 }

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\sidet\AppData\Local\Temp\testng-eclipse-589204972\testng-customsuite.xml</span>
+                    <span>C:\Users\sidet\AppData\Local\Temp\testng-eclipse-444452031\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -61,7 +61,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Default_suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>5 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods, 1 failed,   8 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="etherscandemo.main" class="method navigator-link" hash-for-method="captchaTest">captchaTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    <span class="method-stats">13 methods,   13 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -119,6 +105,16 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="etherscandemo.main" class="method navigator-link" hash-for-method="emptyClick">emptyClick</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="etherscandemo.main" class="method navigator-link" hash-for-method="fullLogin">fullLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="etherscandemo.main" class="method navigator-link" hash-for-method="fullLoginFalseEmail">fullLoginFalseEmail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -143,6 +139,16 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="etherscandemo.main" class="method navigator-link" hash-for-method="registrationWithExistingUsername">registrationWithExistingUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="etherscandemo.main" class="method navigator-link" hash-for-method="shortPassword">shortPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="etherscandemo.main" class="method navigator-link" hash-for-method="shortUsername">shortUsername</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -154,6 +160,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="etherscandemo.main" class="method navigator-link" hash-for-method="validUsername">validUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="etherscandemo.main" class="method navigator-link" hash-for-method="wrongPasswordConfirmation">wrongPasswordConfirmation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -168,75 +179,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">etherscandemo.main</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="captchaTest">
-                  </a> <!-- captchaTest -->
-                  <span class="method-name">captchaTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@id=&apos;recaptcha-anchor&apos;]/div[1]&quot;}
-  (Session info: chrome=111.0.5563.147)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bb946b505a5a75b9b6db6fc841072bb5, findElement {using=xpath, value=//span[@id=&apos;recaptcha-anchor&apos;]/div[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\sidet\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58543}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58543/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bb946b505a5a75b9b6db6fc841072bb5
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at pages.EtherscanPage.find(EtherscanPage.java:33)
-	at pages.EtherscanPage.click(EtherscanPage.java:38)
-	at etherscandemo.main.captchaTest(main.java:79)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -248,6 +190,20 @@ Session ID: bb946b505a5a75b9b6db6fc841072bb5
                   <a name="emptyClick">
                   </a> <!-- emptyClick -->
                   <span class="method-name">emptyClick</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fullLogin">
+                  </a> <!-- fullLogin -->
+                  <span class="method-name">fullLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fullLoginFalseEmail">
+                  </a> <!-- fullLoginFalseEmail -->
+                  <span class="method-name">fullLoginFalseEmail</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -280,6 +236,20 @@ Session ID: bb946b505a5a75b9b6db6fc841072bb5
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="registrationWithExistingUsername">
+                  </a> <!-- registrationWithExistingUsername -->
+                  <span class="method-name">registrationWithExistingUsername</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shortPassword">
+                  </a> <!-- shortPassword -->
+                  <span class="method-name">shortPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="shortUsername">
                   </a> <!-- shortUsername -->
                   <span class="method-name">shortUsername</span>
@@ -299,12 +269,19 @@ Session ID: bb946b505a5a75b9b6db6fc841072bb5
                   <span class="method-name">validUsername</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="wrongPasswordConfirmation">
+                  </a> <!-- wrongPasswordConfirmation -->
+                  <span class="method-name">wrongPasswordConfirmation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\sidet\AppData\Local\Temp\testng-eclipse-589204972\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\sidet\AppData\Local\Temp\testng-eclipse-444452031\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -337,6 +314,78 @@ Session ID: bb946b505a5a75b9b6db6fc841072bb5
             <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Email</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidEmail</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidEmailWithConfirmation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validEmail</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Other</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">emptyClick</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Password</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">shortPassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">wrongPasswordConfirmation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Registration</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">fullLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">fullLoginFalseEmail</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">fullLoginWithoutCaptcha</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">registrationWithExistingUsername</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Username</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">nonAlphanumericUsername</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">shortUsername</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validUsername</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Default_suite" class="panel">
@@ -353,48 +402,64 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(9);
+data.addRows(13);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'fullLoginWithoutCaptcha')
+data.setCell(0, 1, 'registrationWithExistingUsername')
 data.setCell(0, 2, 'etherscandemo.main')
-data.setCell(0, 3, 2321);
+data.setCell(0, 3, 28503);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'emptyClick')
+data.setCell(1, 1, 'fullLogin')
 data.setCell(1, 2, 'etherscandemo.main')
-data.setCell(1, 3, 710);
+data.setCell(1, 3, 28441);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'invalidEmailWithConfirmation')
+data.setCell(2, 1, 'fullLoginFalseEmail')
 data.setCell(2, 2, 'etherscandemo.main')
-data.setCell(2, 3, 653);
+data.setCell(2, 3, 26131);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validEmail')
+data.setCell(3, 1, 'fullLoginWithoutCaptcha')
 data.setCell(3, 2, 'etherscandemo.main')
-data.setCell(3, 3, 602);
+data.setCell(3, 3, 1463);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'invalidEmail')
+data.setCell(4, 1, 'shortPassword')
 data.setCell(4, 2, 'etherscandemo.main')
-data.setCell(4, 3, 574);
+data.setCell(4, 3, 413);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'shortUsername')
+data.setCell(5, 1, 'wrongPasswordConfirmation')
 data.setCell(5, 2, 'etherscandemo.main')
-data.setCell(5, 3, 571);
+data.setCell(5, 3, 408);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'validUsername')
+data.setCell(6, 1, 'invalidEmailWithConfirmation')
 data.setCell(6, 2, 'etherscandemo.main')
-data.setCell(6, 3, 570);
+data.setCell(6, 3, 363);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'nonAlphanumericUsername')
+data.setCell(7, 1, 'emptyClick')
 data.setCell(7, 2, 'etherscandemo.main')
-data.setCell(7, 3, 567);
+data.setCell(7, 3, 245);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'captchaTest')
+data.setCell(8, 1, 'nonAlphanumericUsername')
 data.setCell(8, 2, 'etherscandemo.main')
-data.setCell(8, 3, 136);
+data.setCell(8, 3, 236);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'shortUsername')
+data.setCell(9, 2, 'etherscandemo.main')
+data.setCell(9, 3, 230);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'validUsername')
+data.setCell(10, 2, 'etherscandemo.main')
+data.setCell(10, 3, 226);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'validEmail')
+data.setCell(11, 2, 'etherscandemo.main')
+data.setCell(11, 3, 216);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'invalidEmail')
+data.setCell(12, 2, 'etherscandemo.main')
+data.setCell(12, 3, 209);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -426,110 +491,156 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">captchaTest</span>
-                <span class="method-start">6902 ms</span>
+                <span class="method-name">emptyClick</span>
+                <span class="method-start">5481 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">7049 ms</span>
+                <span class="method-start">5729 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">7583 ms</span>
+                <span class="method-start">5981 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">emptyClick</span>
-                <span class="method-start">11075 ms</span>
+                <span class="method-name">fullLogin</span>
+                <span class="method-start">8938 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">11787 ms</span>
+                <span class="method-start">37381 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">12230 ms</span>
+                <span class="method-start">37659 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">fullLoginFalseEmail</span>
+                <span class="method-start">40776 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">66908 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">67258 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">fullLoginWithoutCaptcha</span>
-                <span class="method-start">15606 ms</span>
+                <span class="method-start">70141 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">17930 ms</span>
+                <span class="method-start">71606 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">18308 ms</span>
+                <span class="method-start">71853 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidEmail</span>
-                <span class="method-start">21741 ms</span>
+                <span class="method-start">74771 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">22317 ms</span>
+                <span class="method-start">74982 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">22747 ms</span>
+                <span class="method-start">75228 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidEmailWithConfirmation</span>
-                <span class="method-start">26340 ms</span>
+                <span class="method-start">78171 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">26996 ms</span>
+                <span class="method-start">78536 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">27383 ms</span>
+                <span class="method-start">78777 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">nonAlphanumericUsername</span>
-                <span class="method-start">30708 ms</span>
+                <span class="method-start">81752 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">31278 ms</span>
+                <span class="method-start">81990 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">31764 ms</span>
+                <span class="method-start">82177 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">registrationWithExistingUsername</span>
+                <span class="method-start">85184 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">113688 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">113986 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shortPassword</span>
+                <span class="method-start">116946 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">117360 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">117611 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">shortUsername</span>
-                <span class="method-start">35114 ms</span>
+                <span class="method-start">120705 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">35687 ms</span>
+                <span class="method-start">120936 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">36055 ms</span>
+                <span class="method-start">121159 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validEmail</span>
-                <span class="method-start">39486 ms</span>
+                <span class="method-start">124188 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">40091 ms</span>
+                <span class="method-start">124406 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">40532 ms</span>
+                <span class="method-start">124638 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validUsername</span>
-                <span class="method-start">43898 ms</span>
+                <span class="method-start">127475 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">44471 ms</span>
+                <span class="method-start">127703 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">127946 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">wrongPasswordConfirmation</span>
+                <span class="method-start">130898 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">131307 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
