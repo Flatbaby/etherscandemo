@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 public class EtherscanPage {
+	// Variables and web element paths
 	private static WebElement element = null;
 	public static By loginButton = By.xpath("//html[@id='html']//input[@id='ContentPlaceHolder1_btnRegister']");
 	public static By cookiesButton = By.xpath("//html[@id='html']//button[@id='btnCookie']");
@@ -43,6 +44,7 @@ public class EtherscanPage {
 	public static String validPasswordString = "password";
 	public static String invalidPasswordString = "asdf";
 
+// functions
 	public static WebElement find(By locator, WebDriver driver) {
 		element = driver.findElement(locator);
 		return element;

@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-30T14:05:21 CEST" name="Default suite" finished-at="2023-03-30T14:07:32 CEST" duration-ms="131561">
+  <suite started-at="2023-03-31T11:30:26 CEST" name="Default suite" finished-at="2023-03-31T11:32:38 CEST" duration-ms="131924">
     <groups>
       <group name="Email">
         <method signature="main.invalidEmail()[pri:0, instance:etherscandemo.main@f5ac9e4]" name="invalidEmail" class="etherscandemo.main"/>
@@ -28,161 +28,161 @@
         <method signature="main.emptyClick()[pri:0, instance:etherscandemo.main@f5ac9e4]" name="emptyClick" class="etherscandemo.main"/>
       </group> <!-- Other -->
     </groups>
-    <test started-at="2023-03-30T14:05:21 CEST" name="Default test" finished-at="2023-03-30T14:07:32 CEST" duration-ms="131561">
+    <test started-at="2023-03-31T11:30:26 CEST" name="Default test" finished-at="2023-03-31T11:32:38 CEST" duration-ms="131924">
       <class name="etherscandemo.main">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:05:21 CEST" name="beforeMethod" finished-at="2023-03-30T14:05:26 CEST" duration-ms="5479" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:30:26 CEST" name="beforeMethod" finished-at="2023-03-31T11:30:32 CEST" duration-ms="5516" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="emptyClick()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:05:26 CEST" name="emptyClick" finished-at="2023-03-30T14:05:26 CEST" duration-ms="245" status="PASS">
+        <test-method signature="emptyClick()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:30:32 CEST" name="emptyClick" finished-at="2023-03-31T11:30:32 CEST" duration-ms="268" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptyClick -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:05:26 CEST" name="afterMethod" finished-at="2023-03-30T14:05:27 CEST" duration-ms="252" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:30:32 CEST" name="afterMethod" finished-at="2023-03-31T11:30:32 CEST" duration-ms="350" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:05:27 CEST" name="beforeMethod" finished-at="2023-03-30T14:05:29 CEST" duration-ms="2956" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:30:32 CEST" name="beforeMethod" finished-at="2023-03-31T11:30:35 CEST" duration-ms="2706" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="fullLogin()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:05:29 CEST" name="fullLogin" finished-at="2023-03-30T14:05:58 CEST" duration-ms="28441" status="PASS">
+        <test-method signature="fullLogin()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:30:35 CEST" name="fullLogin" finished-at="2023-03-31T11:31:03 CEST" duration-ms="27756" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fullLogin -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:05:58 CEST" name="afterMethod" finished-at="2023-03-30T14:05:58 CEST" duration-ms="278" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:31:03 CEST" name="afterMethod" finished-at="2023-03-31T11:31:03 CEST" duration-ms="412" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:05:58 CEST" name="beforeMethod" finished-at="2023-03-30T14:06:01 CEST" duration-ms="3117" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:31:03 CEST" name="beforeMethod" finished-at="2023-03-31T11:31:06 CEST" duration-ms="3110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="fullLoginFalseEmail()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:06:01 CEST" name="fullLoginFalseEmail" finished-at="2023-03-30T14:06:27 CEST" duration-ms="26131" status="PASS">
+        <test-method signature="fullLoginFalseEmail()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:31:06 CEST" name="fullLoginFalseEmail" finished-at="2023-03-31T11:31:32 CEST" duration-ms="26212" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fullLoginFalseEmail -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:06:27 CEST" name="afterMethod" finished-at="2023-03-30T14:06:28 CEST" duration-ms="350" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:31:32 CEST" name="afterMethod" finished-at="2023-03-31T11:31:33 CEST" duration-ms="336" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:06:28 CEST" name="beforeMethod" finished-at="2023-03-30T14:06:31 CEST" duration-ms="2883" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:31:33 CEST" name="beforeMethod" finished-at="2023-03-31T11:31:36 CEST" duration-ms="2819" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="fullLoginWithoutCaptcha()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:06:31 CEST" name="fullLoginWithoutCaptcha" finished-at="2023-03-30T14:06:32 CEST" duration-ms="1463" status="PASS">
+        <test-method signature="fullLoginWithoutCaptcha()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:31:36 CEST" name="fullLoginWithoutCaptcha" finished-at="2023-03-31T11:31:38 CEST" duration-ms="2219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fullLoginWithoutCaptcha -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:06:32 CEST" name="afterMethod" finished-at="2023-03-30T14:06:32 CEST" duration-ms="246" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:31:38 CEST" name="afterMethod" finished-at="2023-03-31T11:31:38 CEST" duration-ms="353" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:06:32 CEST" name="beforeMethod" finished-at="2023-03-30T14:06:35 CEST" duration-ms="2918" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:31:38 CEST" name="beforeMethod" finished-at="2023-03-31T11:31:41 CEST" duration-ms="2718" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="invalidEmail()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:06:35 CEST" name="invalidEmail" finished-at="2023-03-30T14:06:36 CEST" duration-ms="209" status="PASS">
+        <test-method signature="invalidEmail()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:31:41 CEST" name="invalidEmail" finished-at="2023-03-31T11:31:41 CEST" duration-ms="199" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidEmail -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:06:36 CEST" name="afterMethod" finished-at="2023-03-30T14:06:36 CEST" duration-ms="246" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:31:41 CEST" name="afterMethod" finished-at="2023-03-31T11:31:41 CEST" duration-ms="328" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:06:36 CEST" name="beforeMethod" finished-at="2023-03-30T14:06:39 CEST" duration-ms="2943" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:31:41 CEST" name="beforeMethod" finished-at="2023-03-31T11:31:44 CEST" duration-ms="2693" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="invalidEmailWithConfirmation()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:06:39 CEST" name="invalidEmailWithConfirmation" finished-at="2023-03-30T14:06:39 CEST" duration-ms="363" status="PASS">
+        <test-method signature="invalidEmailWithConfirmation()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:31:44 CEST" name="invalidEmailWithConfirmation" finished-at="2023-03-31T11:31:44 CEST" duration-ms="343" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidEmailWithConfirmation -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:06:39 CEST" name="afterMethod" finished-at="2023-03-30T14:06:39 CEST" duration-ms="241" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:31:44 CEST" name="afterMethod" finished-at="2023-03-31T11:31:45 CEST" duration-ms="230" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:06:39 CEST" name="beforeMethod" finished-at="2023-03-30T14:06:42 CEST" duration-ms="2975" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:31:45 CEST" name="beforeMethod" finished-at="2023-03-31T11:31:48 CEST" duration-ms="2869" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="nonAlphanumericUsername()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:06:42 CEST" name="nonAlphanumericUsername" finished-at="2023-03-30T14:06:43 CEST" duration-ms="236" status="PASS">
+        <test-method signature="nonAlphanumericUsername()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:31:48 CEST" name="nonAlphanumericUsername" finished-at="2023-03-31T11:31:48 CEST" duration-ms="245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nonAlphanumericUsername -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:06:43 CEST" name="afterMethod" finished-at="2023-03-30T14:06:43 CEST" duration-ms="187" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:31:48 CEST" name="afterMethod" finished-at="2023-03-31T11:31:48 CEST" duration-ms="266" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:06:43 CEST" name="beforeMethod" finished-at="2023-03-30T14:06:46 CEST" duration-ms="3007" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:31:48 CEST" name="beforeMethod" finished-at="2023-03-31T11:31:50 CEST" duration-ms="2445" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="registrationWithExistingUsername()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:06:46 CEST" name="registrationWithExistingUsername" finished-at="2023-03-30T14:07:14 CEST" duration-ms="28503" status="PASS">
+        <test-method signature="registrationWithExistingUsername()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:31:50 CEST" name="registrationWithExistingUsername" finished-at="2023-03-31T11:32:19 CEST" duration-ms="28331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationWithExistingUsername -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:07:14 CEST" name="afterMethod" finished-at="2023-03-30T14:07:15 CEST" duration-ms="298" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:32:19 CEST" name="afterMethod" finished-at="2023-03-31T11:32:19 CEST" duration-ms="384" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:07:15 CEST" name="beforeMethod" finished-at="2023-03-30T14:07:18 CEST" duration-ms="2960" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:32:19 CEST" name="beforeMethod" finished-at="2023-03-31T11:32:23 CEST" duration-ms="3670" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="shortPassword()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:07:18 CEST" name="shortPassword" finished-at="2023-03-30T14:07:18 CEST" duration-ms="413" status="PASS">
+        <test-method signature="shortPassword()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:32:23 CEST" name="shortPassword" finished-at="2023-03-31T11:32:23 CEST" duration-ms="336" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shortPassword -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:07:18 CEST" name="afterMethod" finished-at="2023-03-30T14:07:18 CEST" duration-ms="250" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:32:23 CEST" name="afterMethod" finished-at="2023-03-31T11:32:23 CEST" duration-ms="301" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:07:18 CEST" name="beforeMethod" finished-at="2023-03-30T14:07:21 CEST" duration-ms="3094" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:32:23 CEST" name="beforeMethod" finished-at="2023-03-31T11:32:27 CEST" duration-ms="3602" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="shortUsername()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:07:21 CEST" name="shortUsername" finished-at="2023-03-30T14:07:21 CEST" duration-ms="230" status="PASS">
+        <test-method signature="shortUsername()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:32:27 CEST" name="shortUsername" finished-at="2023-03-31T11:32:27 CEST" duration-ms="123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shortUsername -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:07:21 CEST" name="afterMethod" finished-at="2023-03-30T14:07:22 CEST" duration-ms="223" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:32:27 CEST" name="afterMethod" finished-at="2023-03-31T11:32:28 CEST" duration-ms="319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:07:22 CEST" name="beforeMethod" finished-at="2023-03-30T14:07:25 CEST" duration-ms="3029" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:32:28 CEST" name="beforeMethod" finished-at="2023-03-31T11:32:31 CEST" duration-ms="3456" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="validEmail()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:07:25 CEST" name="validEmail" finished-at="2023-03-30T14:07:25 CEST" duration-ms="216" status="PASS">
+        <test-method signature="validEmail()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:32:31 CEST" name="validEmail" finished-at="2023-03-31T11:32:31 CEST" duration-ms="207" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validEmail -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:07:25 CEST" name="afterMethod" finished-at="2023-03-30T14:07:25 CEST" duration-ms="232" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:32:31 CEST" name="afterMethod" finished-at="2023-03-31T11:32:31 CEST" duration-ms="272" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:07:25 CEST" name="beforeMethod" finished-at="2023-03-30T14:07:28 CEST" duration-ms="2837" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:32:31 CEST" name="beforeMethod" finished-at="2023-03-31T11:32:34 CEST" duration-ms="2614" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="validUsername()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:07:28 CEST" name="validUsername" finished-at="2023-03-30T14:07:28 CEST" duration-ms="226" status="PASS">
+        <test-method signature="validUsername()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:32:34 CEST" name="validUsername" finished-at="2023-03-31T11:32:34 CEST" duration-ms="226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validUsername -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:07:28 CEST" name="afterMethod" finished-at="2023-03-30T14:07:29 CEST" duration-ms="243" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:32:34 CEST" name="afterMethod" finished-at="2023-03-31T11:32:35 CEST" duration-ms="391" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:07:29 CEST" name="beforeMethod" finished-at="2023-03-30T14:07:31 CEST" duration-ms="2952" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:32:35 CEST" name="beforeMethod" finished-at="2023-03-31T11:32:37 CEST" duration-ms="2584" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="wrongPasswordConfirmation()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:07:31 CEST" name="wrongPasswordConfirmation" finished-at="2023-03-30T14:07:32 CEST" duration-ms="408" status="PASS">
+        <test-method signature="wrongPasswordConfirmation()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:32:37 CEST" name="wrongPasswordConfirmation" finished-at="2023-03-31T11:32:38 CEST" duration-ms="442" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrongPasswordConfirmation -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-30T14:07:32 CEST" name="afterMethod" finished-at="2023-03-30T14:07:32 CEST" duration-ms="212" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:etherscandemo.main@f5ac9e4]" started-at="2023-03-31T11:32:38 CEST" name="afterMethod" finished-at="2023-03-31T11:32:38 CEST" duration-ms="185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

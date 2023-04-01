@@ -2,22 +2,17 @@ package etherscandemo;
 
 import java.time.Duration;
 
-import org.openqa.selenium.By;
-import pages.EtherscanPage;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.Assert;
-import org.testng.annotations.*;
-import org.testng.asserts.*;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class main {
 	// for further teardown and setup i initialized the driver here
@@ -106,7 +101,7 @@ public class main {
 		pages.EtherscanPage.type(pages.EtherscanPage.passwordField, pages.EtherscanPage.validPasswordString, driver);
 		pages.EtherscanPage.type(pages.EtherscanPage.passwordFieldConfirmation, pages.EtherscanPage.validPasswordString,
 				driver);
-
+		//this is for clicking on the captcha
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));
 		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(pages.EtherscanPage.captchaFrame));
 		wait.until(ExpectedConditions.elementToBeClickable(pages.EtherscanPage.captchaBox));
@@ -134,7 +129,7 @@ public class main {
 		pages.EtherscanPage.type(pages.EtherscanPage.passwordField, pages.EtherscanPage.validPasswordString, driver);
 		pages.EtherscanPage.type(pages.EtherscanPage.passwordFieldConfirmation, pages.EtherscanPage.validPasswordString,
 				driver);
-
+		//this is for clicking on the captcha
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));
 		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(pages.EtherscanPage.captchaFrame));
 		wait.until(ExpectedConditions.elementToBeClickable(pages.EtherscanPage.captchaBox));
@@ -183,7 +178,7 @@ public class main {
 		pages.EtherscanPage.type(pages.EtherscanPage.passwordField, pages.EtherscanPage.validPasswordString, driver);
 		pages.EtherscanPage.type(pages.EtherscanPage.passwordFieldConfirmation, pages.EtherscanPage.validPasswordString,
 				driver);
-
+		//this is for clicking on the captcha
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));
 		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(pages.EtherscanPage.captchaFrame));
 		wait.until(ExpectedConditions.elementToBeClickable(pages.EtherscanPage.captchaBox));
